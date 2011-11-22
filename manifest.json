@@ -1,0 +1,11 @@
+{
+    "name": "Remove URL From Google",
+    "version": "1.1",
+    "description": "Adds a link to remove a URL from Google (only works if you have webmaster control now)",
+    "content_scripts": [
+        {
+          "matches": ["http://www.google.co.uk/*", "http://www.google.com/*"],
+          "js": ["jquery-1.6.2.min.js", "urlEncode.js", "contentscript.js", "hashchange.min.js"]
+        }
+    ]
+}
